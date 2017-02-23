@@ -1,0 +1,17 @@
+a:link, a:visited {background: #f9f7f7;}
+
+body {font-family: ms trebuchet, verdana, tahoma, arial; font-size: 9pt; }
+
+div {background: #c4c8c8; border: 1px solid #404040; padding: 12px; resize: both; width: 632px;}
+
+input {font-family: ms trebuchet, verdana, tahoma, arial; font-size: 9pt; }
+
+li {display: inline; left: -25px; list-style-type: none; position: relative;}
+
+select {border: 1px solid #404040; display: inline; height: 360px; overflow: auto; position: relative; resize: vertical; top: -6px; width: 128px;}
+
+#ndx_ta_0 {border: thin solid cfe4cf; display: inline; height: 360px; padding: 5px; position: relative; resize: both; width: 470px;}
+
+#ndx_ta_1, #ndx_ta_2, #ndx_ta_3, #ndx_ta_4 {position: relative; top: 8px;}
+
+ul {background: #f9f7f7; border: 1px solid #f0f0f0; font-size: 8pt;}

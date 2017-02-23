@@ -1,0 +1,177 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+   <link rel="stylesheet" href="editor.css" type="text/css" media="all" /> 
+   <script src="editor.js" type="text/javascript"></script>
+   <title>Editor</title>
+</head>
+
+<body>
+
+<div id="ndx_div_0">
+   
+         <ul class="" id="ndx_ul_txt">
+            <li>Text</li><br />
+            <li>Length <input id="ndx_inp_txt_len" size="3" /></li>
+            <li>Words <input id="ndx_inp_wrds_cnt" size="3" /></li>
+            <li>Spaces <input id="ndx_inp_spc_cnt" size="3" /></li>
+            <li>CRs <input id="ndx_inp_cr_cnt" size="3" /></li>
+         </ul>
+
+      <ul class="" id="ndx_ul_0">
+            <li>Selection</li><br />
+         <li>Start <input id="ndx_inp_0" size="3" /></li>
+         <li>End <input id="ndx_inp_1" size="3" /></li>
+         <li>Length <input id="ndx_inp_2" size="3" /></li>
+         <li>Words <input id="ndx_inp_3" size="3" /></li>
+         <li>Spaces <input id="ndx_inp_4" size="3" /></li>
+         <li>CRs <input id="ndx_inp_5" size="3" /></li>
+         <li><br />Pre-slctn&#160; <textarea id="ndx_ta_1" rows="1"></textarea></li>
+         <li><br />Selection&#160; <textarea id="ndx_ta_2" rows="1"></textarea></li>
+         <li><br />Post-slctn <textarea id="ndx_ta_3" rows="1"></textarea></li>
+         <li><br />&#160;</li>
+      </ul>
+
+      <ul class="" id="ndx_ul_1">
+            <li>Search</li><br />
+         <li>Term <textarea id="ndx_ta_4" rows="1"></textarea></li>
+            <li>Matches <input id="ndx_inp_srch_mtch_cnt" size="3" /></li>
+
+      </ul>
+
+   <select id="ndx_slct_0" onchange="st_lmnt();" size="36">
+      <option id="">&lt;!--...--&gt;</option>
+      <option id="">&lt;!DOCTYPE&gt;</option> 
+      <option id="">&lt;a&gt;</option>
+      <option id="">&lt;abbr&gt;</option>
+      <option id="">&lt;acronym&gt;</option>
+      <option id="">&lt;address&gt;</option>
+      <option id="">&lt;applet&gt;</option>
+      <option id="">&lt;area /&gt;</option>
+      <option id="">&lt;article&gt;</option>
+      <option id="">&lt;aside&gt;</option>
+      <option id="">&lt;audio&gt;</option>
+      <option id="">&lt;b&gt;</option>
+      <option id="">&lt;base /&gt;</option>
+      <option id="">&lt;basefont /&gt;</option>
+      <option id="">&lt;bdi&gt;</option>
+      <option id="">&lt;bdo&gt;</option>
+      <option id="">&lt;big&gt;</option>
+      <option id="">&lt;blockquote&gt;</option>
+      <option id="">&lt;body&gt;</option>
+      <option id="">&lt;br /&gt;</option>
+      <option id="">&lt;button&gt;</option>
+      <option id="">&lt;canvas&gt;</option>
+      <option id="">&lt;caption&gt;</option>
+      <option id="">&lt;center&gt;</option>
+      <option id="">&lt;cite&gt;</option>
+      <option id="">&lt;code&gt;</option>
+      <option id="">&lt;col /&gt;</option>
+      <option id="">&lt;colgroup&gt;</option>
+      <option id="">&lt;command&gt;</option>
+      <option id="">&lt;datalist&gt;</option>
+      <option id="">&lt;dd&gt;</option>
+      <option id="">&lt;del&gt;</option>
+      <option id="">&lt;details&gt;</option>
+      <option id="">&lt;dfn&gt;</option>
+      <option id="">&lt;dir&gt;</option>
+      <option id="">&lt;div&gt;</option>
+      <option id="">&lt;dl&gt;</option>
+      <option id="">&lt;dt&gt;</option>
+      <option id="">&lt;em&gt;</option>
+      <option id="">&lt;embed&gt;</option>
+      <option id="">&lt;fieldset&gt;</option>
+      <option id="">&lt;figcaption&gt;</option>
+      <option id="">&lt;figure&gt;</option>
+      <option id="">&lt;font&gt;</option>
+      <option id="">&lt;footer&gt;</option>
+      <option id="">&lt;form&gt;</option>
+      <option id="">&lt;frame /&gt;</option>
+      <option id="">&lt;frameset&gt;</option>
+      <option id="">&lt;h1&gt;</option>
+      <option id="">&lt;h2&gt;</option>
+      <option id="">&lt;h3&gt;</option>
+      <option id="">&lt;h4&gt;</option>
+      <option id="">&lt;h5&gt;</option>
+      <option id="">&lt;h6&gt;</option>
+      <option id="">&lt;head&gt;</option>
+      <option id="">&lt;header&gt;</option>
+      <option id="">&lt;hgroup&gt;</option>
+      <option id="">&lt;hr /&gt;</option>
+      <option id="">&lt;html&gt;</option>
+      <option id="">&lt;i&gt;</option>
+      <option id="">&lt;iframe&gt;</option>
+      <option id="">&lt;img /&gt;</option>
+      <option id="">&lt;input /&gt;</option>
+      <option id="">&lt;ins&gt;</option>
+      <option id="">&lt;keygen&gt;</option>
+      <option id="">&lt;kbd&gt;</option>
+      <option id="">&lt;label&gt;</option>
+      <option id="">&lt;legend&gt;</option>
+      <option id="">&lt;li&gt;</option>
+      <option id="">&lt;link /&gt;</option>
+      <option id="">&lt;map&gt;</option>
+      <option id="">&lt;mark&gt;</option>
+      <option id="">&lt;menu&gt;</option>
+      <option id="">&lt;meta /&gt;</option>
+      <option id="">&lt;meter&gt;</option>
+      <option id="">&lt;nav&gt;</option>
+      <option id="">&lt;noframes&gt;</option>
+      <option id="">&lt;noscript&gt;</option>
+      <option id="">&lt;object&gt;</option>
+      <option id="">&lt;ol&gt;</option>
+      <option id="">&lt;optgroup&gt;</option>
+      <option id="">&lt;option&gt;</option>
+      <option id="">&lt;output&gt;</option>
+      <option id="">&lt;p&gt;</option>
+      <option id="">&lt;param /&gt;</option>
+      <option id="">&lt;pre&gt;</option>
+      <option id="">&lt;progress&gt;</option>
+      <option id="">&lt;q&gt;</option>
+      <option id="">&lt;rp&gt;</option>
+      <option id="">&lt;rt&gt;</option>
+      <option id="">&lt;ruby&gt;</option>
+      <option id="">&lt;s&gt;</option>
+      <option id="">&lt;samp&gt;</option>
+      <option id="">&lt;script&gt;</option>
+      <option id="">&lt;section&gt;</option>
+      <option id="">&lt;select&gt;</option>
+      <option id="">&lt;small&gt;</option>
+      <option id="">&lt;source&gt;</option>
+      <option id="">&lt;span&gt;</option>
+      <option id="">&lt;strike&gt;</option>
+      <option id="">&lt;strong&gt;</option>
+      <option id="">&lt;style&gt;</option>
+      <option id="">&lt;sub&gt;</option>
+      <option id="">&lt;summary&gt;</option>
+      <option id="">&lt;sup&gt;</option>
+      <option id="">&lt;table&gt;</option>
+      <option id="">&lt;tbody&gt;</option>
+      <option id="">&lt;td&gt;</option>
+      <option id="">&lt;textarea&gt;</option>
+      <option id="">&lt;tfoot&gt;</option>
+      <option id="">&lt;th&gt;</option>
+      <option id="">&lt;thead&gt;</option>
+      <option id="">&lt;time&gt;</option>
+      <option id="">&lt;title&gt;</option>
+      <option id="">&lt;tr&gt;</option>
+      <option id="">&lt;track&gt;</option>
+      <option id="">&lt;tt&gt;</option>
+      <option id="">&lt;u&gt;</option>
+      <option id="">&lt;ul&gt;</option>
+      <option id="">&lt;var&gt;</option>
+      <option id="">&lt;video&gt;</option>
+      <option id="">&lt;wbr&gt;</option>
+      <option id="">&lt;xmp&gt;</option>
+   </select>
+
+   <textarea id="ndx_ta_0" onmouseup="st_crsr_pstn(); rgxp_wrdcnt_txt();" rows="30">
+In January 1968, after some initial success in Britain with their debut album Mr. Fantasy, Dave Mason had departed from the group. He produced the debut album by the group Family, containing in its ranks future Traffic bass player Ric Grech, while Traffic went on the road.[3] In May, the band had invited Mason back to begin recording the new album.
+</textarea>
+
+</div>
+
+</body>
+</html>
